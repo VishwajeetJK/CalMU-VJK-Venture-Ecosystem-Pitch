@@ -35,13 +35,11 @@ npm run build
 npm start
 ```
 
-## Deploy
+## Deploy on GitHub Pages (github.io)
 
-The repo is set up for **Vercel** (recommended for Next.js):
+1. **Enable GitHub Pages:** In your repo go to **Settings** → **Pages**. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+2. **Push to trigger deploy:** Every push to `main` runs the workflow. After it completes, the site is live at:
+   **https://vishwajeetjk.github.io/CalMU-VJK-Venture-Ecosystem-Pitch/**
+3. To deploy now, push any commit to `main` (or re-run the **Deploy to GitHub Pages** workflow from the **Actions** tab).
 
-1. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
-2. Click **Add New** → **Project** and import **VishwajeetJK/CalMU-VJK-Venture-Ecosystem-Pitch**.
-3. Leave the default settings (Framework: Next.js) and click **Deploy**.
-4. Your site will be live at `https://your-project.vercel.app`. You can add a custom domain in Project Settings.
-
-**Campus video:** The Campus Walk video is not in the repo (size limit). After deploy, add `calmu-campus-walk.mp4` to the `public/` folder via Vercel’s dashboard or redeploy with the file included locally, or host it elsewhere and set the video `src` in `CampusInfrastructureSection.tsx`.
+**Campus video:** The Campus Walk video is not in the repo (size limit). Host `calmu-campus-walk.mp4` elsewhere (e.g. Cloudinary, YouTube unlisted) and set the video `src` in `CampusInfrastructureSection.tsx`, or add it to `public/` and redeploy.
