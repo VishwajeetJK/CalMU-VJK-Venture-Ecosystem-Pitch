@@ -239,9 +239,9 @@ export default function HireSection() {
                       <span
                         key={i}
                         className={`rounded-full px-3 py-1 font-sans text-xs font-medium ${
-                          tag.variant === "red"
-                            ? "bg-red-500 text-white"
-                            : "bg-blue-100 text-blue-800"
+                          tag.variant === "blue"
+                            ? "bg-blue-100 text-blue-800"
+                            : "bg-red-500 text-white"
                         }`}
                       >
                         {tag.label}
@@ -253,9 +253,9 @@ export default function HireSection() {
                       <span
                         key={i}
                         className={`rounded-full px-3 py-1 font-sans text-xs font-medium ${
-                          tag.variant === "red"
-                            ? "bg-red-500 text-white"
-                            : "bg-blue-100 text-blue-800"
+                          tag.variant === "blue"
+                            ? "bg-blue-100 text-blue-800"
+                            : "bg-red-500 text-white"
                         }`}
                       >
                         {tag.label}
