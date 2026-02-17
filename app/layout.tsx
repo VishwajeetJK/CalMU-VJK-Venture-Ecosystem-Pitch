@@ -14,12 +14,14 @@ const inter = Inter({
   display: "swap",
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "CalMU X Vishwajeet Venture Ecosystem | Orbital Venture Engine",
   description:
     "Venture pitch for the CalMU X Vishwajeet Venture Ecosystem — Orbital Venture Engine, 15-month roadmap, and global founder proposition.",
   icons: {
-    icon: "/icon.svg",
+    icon: `${basePath}/icon.svg`,
   },
 };
 
