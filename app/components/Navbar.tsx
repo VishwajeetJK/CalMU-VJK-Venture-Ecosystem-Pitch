@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const navLinks = [
   { href: "#hero", label: "Orbital Engine" },
   { href: "#methodology", label: "Methodology" },
@@ -30,7 +32,7 @@ export default function Navbar() {
         { className: "flex items-center gap-2 sm:gap-2.5" },
         React.createElement("div", { className: "relative h-16 w-16 shrink-0 sm:h-[4.5rem] sm:w-[4.5rem]" },
           React.createElement(Image, {
-            src: "/calmu-logo.webp",
+            src: `${basePath}/calmu-logo.webp`,
             alt: "CalMU",
             fill: true,
             className: "object-contain",
@@ -41,7 +43,7 @@ export default function Navbar() {
         React.createElement("span", { className: "font-sans text-sm font-semibold text-calmu-black sm:text-base" }, "×"),
         React.createElement("div", { className: "relative h-8 w-8 shrink-0 sm:h-9 sm:w-9" },
           React.createElement(Image, {
-            src: "/spj-logo.jpg",
+            src: `${basePath}/spj-logo.jpg`,
             alt: "SP Jain",
             fill: true,
             className: "object-contain",
