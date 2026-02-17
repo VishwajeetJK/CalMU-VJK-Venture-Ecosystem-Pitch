@@ -33,13 +33,14 @@ const METRICS = [
   },
 ];
 
-const TAGS_ROW1 = [
-  { label: "Columbia Business School & Columbia Engineering", variant: "blue" as const },
+type TagVariant = "red" | "blue";
+const TAGS_ROW1: { label: string; variant: TagVariant }[] = [
+  { label: "Columbia Business School & Columbia Engineering", variant: "blue" },
 ];
-const TAGS_ROW2 = [
-  { label: "LVMH", variant: "red" as const },
-  { label: "Groww", variant: "red" as const },
-  { label: "Times of India Group", variant: "red" as const },
+const TAGS_ROW2: { label: string; variant: TagVariant }[] = [
+  { label: "LVMH", variant: "red" },
+  { label: "Groww", variant: "red" },
+  { label: "Times of India Group", variant: "red" },
 ];
 
 export default function HireSection() {
